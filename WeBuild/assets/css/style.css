@@ -410,6 +410,13 @@ section {
 /*--------------------------------------------------------------
 # Contact Us
 --------------------------------------------------------------*/
+.contact h2 {
+
+    font-family: 'Cafe24Ssurround';
+    color: black;
+  
+}
+
 .contact .contact-info {
   margin-bottom: 20px;
   text-align: center;
