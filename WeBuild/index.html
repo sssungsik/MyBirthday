@@ -80,18 +80,27 @@
               /><span class="login-span">네이버로 계속하기</span></a>
           </li>
           <li class="login-li">
-            <a href="#" class="google-a"
+            <a href="#" class="google-a"  id="login-button"
               ><img
                 src="assets/img/2fpchc6gsov07l5ilu48nrjsnq.png"
                 class="login-img"
               /><span class="login-span">회원 아이디로 계속하기</span></a>
           </li>
         </ul>
-       
-          
+      </div>
+      <!--  로그인 창  -->
+      <div id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <form>
+            <input type="text" id="username" name="username" placeholder="아이디를 입력하세요." required >
+            <br>
 
-         
-      
+            <input type="password" id="password" name="password" placeholder="비밀번호를 입력하세요." required>
+            <br>
+            <input type="button" value="바로가입" id="register"/>
+          </form>
+        </div>
       </div>
     </section>
     <!-- End Hero -->

@@ -1,19 +1,22 @@
 @font-face {
-  font-family: 'Cafe24Ssurround';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-family: "Cafe24Ssurround";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Pretendard-Regular';
-  src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
-  font-family: 'Ownglyph_jooreeletter-Rg';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2') format('woff2');
+  font-family: "Ownglyph_jooreeletter-Rg";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2405-2@1.0/Ownglyph_jooreeletter-Rg.woff2")
+    format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -54,7 +57,7 @@ h6,
   padding: 20px 0;
   position: relative;
   z-index: 10;
-  font-family: 'Pretendard-Regular';
+  font-family: "Pretendard-Regular";
 }
 
 #header .logo h1 {
@@ -131,7 +134,7 @@ h6,
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
-  font-family: 'Cafe24Ssurround';
+  font-family: "Cafe24Ssurround";
   color: #fff;
 }
 
@@ -139,7 +142,7 @@ h6,
   color: #eee;
   margin-bottom: 30px;
   font-size: 24px;
-  font-family: 'Ownglyph_jooreeletter-Rg';
+  font-family: "Ownglyph_jooreeletter-Rg";
 }
 
 #hero .countdown {
@@ -153,7 +156,7 @@ h6,
 .cake {
   width: 120px;
   height: 120px;
-  background-image: url('/WeBuild/assets/img/cake.png');
+  background-image: url("/WeBuild/assets/img/cake.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -163,10 +166,15 @@ h6,
   position: absolute;
   width: 3px;
   height: 6px;
-  background: radial-gradient(circle, rgba(255,255,0,1) 0%, rgba(255,165,0,1) 100%);
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 0, 1) 0%,
+    rgba(255, 165, 0, 1) 100%
+  );
   border-radius: 50%;
   animation: flicker 1s infinite alternate; /* 지속 시간을 1초로 설정 */
-  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6), 0 0 30px 20px rgba(255, 165, 0, 0.4);
+  box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6),
+    0 0 30px 20px rgba(255, 165, 0, 0.4);
 }
 #flame1 {
   top: 2px; /* 초의 위치에 맞게 조정 */
@@ -184,14 +192,16 @@ h6,
 }
 @keyframes flicker {
   0% {
-      transform: scale(1);
-      opacity: 1;
-      box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6), 0 0 30px 20px rgba(255, 165, 0, 0.4);
+    transform: scale(1);
+    opacity: 1;
+    box-shadow: 0 0 20px 10px rgba(255, 255, 0, 0.6),
+      0 0 30px 20px rgba(255, 165, 0, 0.4);
   }
   100% {
-      transform: scale(1.2);
-      opacity: 0.8;
-      box-shadow: 0 0 25px 12px rgba(255, 255, 0, 0.8), 0 0 35px 25px rgba(255, 165, 0, 0.5);
+    transform: scale(1.2);
+    opacity: 0.8;
+    box-shadow: 0 0 25px 12px rgba(255, 255, 0, 0.8),
+      0 0 35px 25px rgba(255, 165, 0, 0.5);
   }
 }
 #hero .php-email-form .error-message {
@@ -230,23 +240,23 @@ h6,
   border-top-color: #eee;
   animation: animate-loading-notify 1s linear infinite;
 }
-.login-ul{
-  font-size:  1rem;
-    line-height: 1.25rem;
-    font-weight: 500;
-    margin: 0px auto;
-    padding: 0.5rem 2.5rem;
-    max-width: 35rem;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: stretch;
-    align-items: stretch;
-    gap: 0.5rem;
-    text-align: center;
+.login-ul {
+  font-size: 1rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  margin: 0px auto;
+  padding: 0.5rem 2.5rem;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: stretch;
+  align-items: stretch;
+  gap: 0.5rem;
+  text-align: center;
 }
-.login-li{
+.login-li {
   position: relative;
   display: flex;
   -webkit-box-pack: center;
@@ -276,6 +286,7 @@ h6,
   line-height: 1.25rem;
   font-size: 1rem;
   font-weight: 700;
+  font-family: "Pretendard-Regular";
 }
 
 .google-a {
@@ -289,11 +300,11 @@ h6,
   align-items: center;
   border-radius: 1rem;
   position: relative;
-  background-color:#ff8c9f;
+  background-color: #ff8c9f;
   color: white;
 }
 
-.naver-a{
+.naver-a {
   width: 100%;
   height: 3.25rem;
   padding: 1rem 5.5rem;
@@ -305,7 +316,7 @@ h6,
   border-radius: 1rem;
   position: relative;
   background-color: rgb(46, 180, 1);
-  color:white;
+  color: white;
 }
 
 @keyframes animate-loading-notify {
@@ -329,7 +340,7 @@ h6,
   margin: 0 8px;
 }
 
-#hero .php-email-form button[type=submit] {
+#hero .php-email-form button[type="submit"] {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -344,7 +355,7 @@ h6,
   background: #4f92af;
 }
 
-#hero .php-email-form button[type=submit]:hover {
+#hero .php-email-form button[type="submit"]:hover {
   background: transparent;
   color: #fff;
   border: 2px solid #fff;
@@ -411,10 +422,8 @@ section {
 # Contact Us
 --------------------------------------------------------------*/
 .contact h2 {
-
-    font-family: 'Cafe24Ssurround';
-    color: black;
-  
+  font-family: "Cafe24Ssurround";
+  color: black;
 }
 
 .contact .contact-info {
@@ -465,7 +474,7 @@ section {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -509,7 +518,7 @@ section {
   border-color: #4f92af;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: #4f92af;
   border: 0;
   padding: 10px 24px;
@@ -517,7 +526,7 @@ section {
   transition: 0.4s;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #72a8bf;
 }
 
@@ -567,4 +576,75 @@ section {
 
 #footer .credits a {
   color: #72a8bf;
+}
+
+/* 모달 스타일링 */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center; /* 수평 중앙 정렬 */
+  align-items: flex-end; /* 수직 아래 정렬 */
+}
+
+.modal-content {
+  background-color: rgb(34, 37, 48);
+  margin: 15% auto;
+  padding: 20px;
+  border: none;
+  width: 80%;
+  max-width: 300px;
+  position: relative;
+  transform: translateY(100%); /* 처음 위치를 화면 아래로 설정 */
+  animation: slideUp 0.5s forwards; /* 슬라이드 업 애니메이션 */
+}
+.modal-content input {
+  margin: 5px auto;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  box-sizing: border-box; /* 패딩과 테두리를 포함하도록 설정 */
+  font-family: "Pretendard-Regular";
+}
+.modal-content input::placeholder {
+  color: rgba(0, 0, 0, 0.8); /* placeholder 텍스트 색상 */
+  text-align: center; /* placeholder 텍스트 중앙 정렬 */
+}
+.close-button {
+  color: #aaa;
+  position: absolute;
+  right: -30px;
+  top: -10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: black;
+  text-decoration: none;
+}
+
+#register {
+  background-color: #ff8c9f;
+  color: white;
+}
+/* 페이드 인 애니메이션 */
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
 }

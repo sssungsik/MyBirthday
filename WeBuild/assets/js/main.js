@@ -1,46 +1,24 @@
-/**
-* Template Name: WeBuild
-* Template URL: https://bootstrapmade.com/free-bootstrap-coming-soon-template-countdwon/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-(function() {
-  "use strict";
 
-  /**
-   * Easy selector helper function
-   */
-  const select = (el, all = false) => {
-    el = el.trim()
-    if (all) {
-      return [...document.querySelectorAll(el)]
-    } else {
-      return document.querySelector(el)
-    }
+// 요소 선택
+const loginButton = document.getElementById('login-button');
+const modal = document.getElementById('login-modal');
+const closeButton = document.querySelector('.close-button');
+
+// 로그인 버튼 클릭 시 모달 표시
+loginButton.addEventListener('click', function(event) {
+  event.preventDefault(); // 기본 링크 동작 막기
+  modal.style.display = 'block';
+});
+
+// 닫기 버튼 클릭 시 모달 숨기기
+closeButton.addEventListener('click', function() {
+  modal.style.display = 'none';
+});
+
+// 모달 외부 클릭 시 모달 숨기기
+window.addEventListener('click', function(event) {
+  if (event.target === modal) {
+    modal.style.display = 'none';
   }
-
-  /**
-   * Countdown timer
-   */
-
-  let countdown = select('.countdown');
-
-  const countDownDate = function() {
-    let timeleft = new Date(countdown.getAttribute('data-count')).getTime() - new Date().getTime();
-
-    let weeks = Math.floor(timeleft / (1000 * 60 * 60 * 24 * 7));
-    let days = Math.floor(timeleft / (1000 * 60 * 60 * 24));
-    let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60));
-    let seconds = Math.floor((timeleft % (1000 * 60)) / 1000);
-
-    let output = countdown.getAttribute('data-template');
-    output = output.replace('%w', weeks).replace('%d', days).replace('%h', hours).replace('%m', minutes).replace('%s', seconds);
-    countdown.innerHTML = output;
-  }
-  countDownDate();
-  setInterval(countDownDate, 1000);
-
-})()
+});
